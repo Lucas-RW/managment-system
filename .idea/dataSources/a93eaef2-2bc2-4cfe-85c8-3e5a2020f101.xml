@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.53">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>766</IntrospectionStateNumber>
+      <IntrospectionStateNumber>770</IntrospectionStateNumber>
       <ServerVersion>18.0</ServerVersion>
       <StartupTime>1764177893</StartupTime>
       <TimeZones>true ACDT
@@ -699,7 +699,7 @@ false posixrules
 13293||10|C|G
 13293||-9223372036854775808|U|G
 13293||10|U|G</Grants>
-      <IntrospectionStateNumber>766</IntrospectionStateNumber>
+      <IntrospectionStateNumber>770</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>admin_user</OwnerName>
     </database>
@@ -793,14 +793,82 @@ false posixrules
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>766</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>766</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>766</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>770</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>770</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>770</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2025-11-26.17:27:57</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-11-26.17:50:48</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>546</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
+    <table id="26" parent="25" name="users">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>16389</ObjectId>
+      <StateNumber>767</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>admin_user</OwnerName>
+    </table>
+    <column id="27" parent="26" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>767</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="28" parent="26" name="email">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>767</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="29" parent="26" name="password">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>767</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="30" parent="26" name="role">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>769</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="31" parent="26" name="users_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16398</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>767</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="32" parent="26" name="users_email_key">
+      <ColNames>email</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16400</ObjectId>
+      <StateNumber>767</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="33" parent="26" name="users_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16399</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>767</StateNumber>
+      <UnderlyingIndexId>16398</UnderlyingIndexId>
+    </key>
+    <key id="34" parent="26" name="users_email_key">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16401</ObjectId>
+      <StateNumber>767</StateNumber>
+      <UnderlyingIndexId>16400</UnderlyingIndexId>
+    </key>
   </database-model>
 </dataSource>
