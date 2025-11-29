@@ -34,12 +34,13 @@ public class JwtUtil {
                 .compact();
     }
 
-    public void validateToken(String token) {
+    public boolean validateToken(String token) {
         try {
             Jwts.parser().verifyWith((SecretKey) secretKey)
             .build().parseSignedClaims(token);
+            return true;
         } catch (JwtException e) {
-            throw new JwtException("Invalid JWT token");
+            return false;
         }
     }
 
