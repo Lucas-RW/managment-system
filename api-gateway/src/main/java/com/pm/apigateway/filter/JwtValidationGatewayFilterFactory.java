@@ -9,7 +9,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @Component
-public class JwtValidationGatewayFilterFactory extends AbstractGatewayFilterFactory<Object> {
+public class JwtValidationGatewayFilterFactory extends
+        AbstractGatewayFilterFactory<Object> {
 
     private final WebClient webClient;
 
@@ -21,9 +22,10 @@ public class JwtValidationGatewayFilterFactory extends AbstractGatewayFilterFact
     @Override
     public GatewayFilter apply(Object config) {
         return (exchange, chain) -> {
-            String token = exchange.getRequest().getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
+            String token =
+                    exchange.getRequest().getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
 
-            if (token == null || !token.startsWith("Bearer ")) {
+            if(token == null || !token.startsWith("Bearer ")) {
                 exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
                 return exchange.getResponse().setComplete();
             }
@@ -36,5 +38,4 @@ public class JwtValidationGatewayFilterFactory extends AbstractGatewayFilterFact
                     .then(chain.filter(exchange));
         };
     }
-
 }
