@@ -11,6 +11,146 @@
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}"
       },
+      "metadata": {
+        "/localstack/ManagementSystemVPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCE2F7C494"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPublicSubnet1Subnet077400EE"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPublicSubnet1RouteTableAA09E8F1"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPublicSubnet1RouteTableAssociation6894F792"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPublicSubnet1DefaultRouteD235F518"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPublicSubnet1EIPE5552E62"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPublicSubnet1NATGateway079D9923"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPublicSubnet2SubnetC56BE57A"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPublicSubnet2RouteTableFD435EAC"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPublicSubnet2RouteTableAssociation4771F9D0"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPublicSubnet2DefaultRouteF98629BF"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPublicSubnet2EIP099AF93F"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPublicSubnet2NATGateway1BE252D3"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPrivateSubnet1SubnetF5F9816E"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPrivateSubnet1RouteTable036163CC"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPrivateSubnet1RouteTableAssociationC7FEF709"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPrivateSubnet1DefaultRouteCC7BA082"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPrivateSubnet2SubnetA66A9F9B"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPrivateSubnet2RouteTable8B638F87"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPrivateSubnet2RouteTableAssociationCEC7CA08"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCPrivateSubnet2DefaultRoute194C1BDD"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCIGW555A793D"
+          }
+        ],
+        "/localstack/ManagementSystemVPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemVPCVPCGW81E8B916"
+          }
+        ]
+      },
       "displayName": "localstack"
     },
     "Tree": {
