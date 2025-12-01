@@ -150,6 +150,18 @@
             "data": "ManagementSystemVPCVPCGW81E8B916"
           }
         ],
+        "/localstack/ManagementSystemCluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemCluster148FAD92"
+          }
+        ],
+        "/localstack/ManagementSystemCluster/DefaultServiceDiscoveryNamespace/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementSystemClusterDefaultServiceDiscoveryNamespace014CCB88"
+          }
+        ],
         "/localstack/AuthServiceDB/SubnetGroup/Default": [
           {
             "type": "aws:cdk:logicalId",

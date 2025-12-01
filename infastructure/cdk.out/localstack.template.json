@@ -391,6 +391,18 @@
     }
    }
   },
+  "ManagementSystemCluster148FAD92": {
+   "Type": "AWS::ECS::Cluster"
+  },
+  "ManagementSystemClusterDefaultServiceDiscoveryNamespace014CCB88": {
+   "Type": "AWS::ServiceDiscovery::PrivateDnsNamespace",
+   "Properties": {
+    "Name": "management-system.local",
+    "Vpc": {
+     "Ref": "ManagementSystemVPCE2F7C494"
+    }
+   }
+  },
   "AuthServiceDBSubnetGroupCFE5A552": {
    "Type": "AWS::RDS::DBSubnetGroup",
    "Properties": {
