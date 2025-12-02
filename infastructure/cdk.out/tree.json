@@ -8,13 +8,13 @@
         "id": "localstack",
         "path": "localstack",
         "children": {
-          "ManagementSystemVPC": {
-            "id": "ManagementSystemVPC",
-            "path": "localstack/ManagementSystemVPC",
+          "PatientManagementVPC": {
+            "id": "PatientManagementVPC",
+            "path": "localstack/PatientManagementVPC",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "localstack/ManagementSystemVPC/Resource",
+                "path": "localstack/PatientManagementVPC/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::EC2::VPC",
                   "aws:cdk:cloudformation:props": {
@@ -25,7 +25,7 @@
                     "tags": [
                       {
                         "key": "Name",
-                        "value": "ManagementSystemVPC"
+                        "value": "PatientManagementVPC"
                       }
                     ]
                   }
@@ -37,11 +37,11 @@
               },
               "PublicSubnet1": {
                 "id": "PublicSubnet1",
-                "path": "localstack/ManagementSystemVPC/PublicSubnet1",
+                "path": "localstack/PatientManagementVPC/PublicSubnet1",
                 "children": {
                   "Subnet": {
                     "id": "Subnet",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet1/Subnet",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet1/Subnet",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::Subnet",
                       "aws:cdk:cloudformation:props": {
@@ -66,11 +66,11 @@
                           },
                           {
                             "key": "Name",
-                            "value": "localstack/ManagementSystemVPC/PublicSubnet1"
+                            "value": "localstack/PatientManagementVPC/PublicSubnet1"
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -81,7 +81,7 @@
                   },
                   "Acl": {
                     "id": "Acl",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet1/Acl",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet1/Acl",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
                       "version": "2.178.1",
@@ -90,18 +90,18 @@
                   },
                   "RouteTable": {
                     "id": "RouteTable",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet1/RouteTable",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet1/RouteTable",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::RouteTable",
                       "aws:cdk:cloudformation:props": {
                         "tags": [
                           {
                             "key": "Name",
-                            "value": "localstack/ManagementSystemVPC/PublicSubnet1"
+                            "value": "localstack/PatientManagementVPC/PublicSubnet1"
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -112,15 +112,15 @@
                   },
                   "RouteTableAssociation": {
                     "id": "RouteTableAssociation",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet1/RouteTableAssociation",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet1/RouteTableAssociation",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::SubnetRouteTableAssociation",
                       "aws:cdk:cloudformation:props": {
                         "routeTableId": {
-                          "Ref": "ManagementSystemVPCPublicSubnet1RouteTableAA09E8F1"
+                          "Ref": "PatientManagementVPCPublicSubnet1RouteTableA48D3D3E"
                         },
                         "subnetId": {
-                          "Ref": "ManagementSystemVPCPublicSubnet1Subnet077400EE"
+                          "Ref": "PatientManagementVPCPublicSubnet1SubnetC8305E9D"
                         }
                       }
                     },
@@ -131,16 +131,16 @@
                   },
                   "DefaultRoute": {
                     "id": "DefaultRoute",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet1/DefaultRoute",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet1/DefaultRoute",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::Route",
                       "aws:cdk:cloudformation:props": {
                         "destinationCidrBlock": "0.0.0.0/0",
                         "gatewayId": {
-                          "Ref": "ManagementSystemVPCIGW555A793D"
+                          "Ref": "PatientManagementVPCIGWA0746919"
                         },
                         "routeTableId": {
-                          "Ref": "ManagementSystemVPCPublicSubnet1RouteTableAA09E8F1"
+                          "Ref": "PatientManagementVPCPublicSubnet1RouteTableA48D3D3E"
                         }
                       }
                     },
@@ -151,7 +151,7 @@
                   },
                   "EIP": {
                     "id": "EIP",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet1/EIP",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet1/EIP",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::EIP",
                       "aws:cdk:cloudformation:props": {
@@ -159,7 +159,7 @@
                         "tags": [
                           {
                             "key": "Name",
-                            "value": "localstack/ManagementSystemVPC/PublicSubnet1"
+                            "value": "localstack/PatientManagementVPC/PublicSubnet1"
                           }
                         ]
                       }
@@ -171,23 +171,23 @@
                   },
                   "NATGateway": {
                     "id": "NATGateway",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet1/NATGateway",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet1/NATGateway",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::NatGateway",
                       "aws:cdk:cloudformation:props": {
                         "allocationId": {
                           "Fn::GetAtt": [
-                            "ManagementSystemVPCPublicSubnet1EIPE5552E62",
+                            "PatientManagementVPCPublicSubnet1EIPC113BD7F",
                             "AllocationId"
                           ]
                         },
                         "subnetId": {
-                          "Ref": "ManagementSystemVPCPublicSubnet1Subnet077400EE"
+                          "Ref": "PatientManagementVPCPublicSubnet1SubnetC8305E9D"
                         },
                         "tags": [
                           {
                             "key": "Name",
-                            "value": "localstack/ManagementSystemVPC/PublicSubnet1"
+                            "value": "localstack/PatientManagementVPC/PublicSubnet1"
                           }
                         ]
                       }
@@ -206,11 +206,11 @@
               },
               "PublicSubnet2": {
                 "id": "PublicSubnet2",
-                "path": "localstack/ManagementSystemVPC/PublicSubnet2",
+                "path": "localstack/PatientManagementVPC/PublicSubnet2",
                 "children": {
                   "Subnet": {
                     "id": "Subnet",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet2/Subnet",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet2/Subnet",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::Subnet",
                       "aws:cdk:cloudformation:props": {
@@ -235,11 +235,11 @@
                           },
                           {
                             "key": "Name",
-                            "value": "localstack/ManagementSystemVPC/PublicSubnet2"
+                            "value": "localstack/PatientManagementVPC/PublicSubnet2"
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -250,7 +250,7 @@
                   },
                   "Acl": {
                     "id": "Acl",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet2/Acl",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet2/Acl",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
                       "version": "2.178.1",
@@ -259,18 +259,18 @@
                   },
                   "RouteTable": {
                     "id": "RouteTable",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet2/RouteTable",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet2/RouteTable",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::RouteTable",
                       "aws:cdk:cloudformation:props": {
                         "tags": [
                           {
                             "key": "Name",
-                            "value": "localstack/ManagementSystemVPC/PublicSubnet2"
+                            "value": "localstack/PatientManagementVPC/PublicSubnet2"
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -281,15 +281,15 @@
                   },
                   "RouteTableAssociation": {
                     "id": "RouteTableAssociation",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet2/RouteTableAssociation",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet2/RouteTableAssociation",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::SubnetRouteTableAssociation",
                       "aws:cdk:cloudformation:props": {
                         "routeTableId": {
-                          "Ref": "ManagementSystemVPCPublicSubnet2RouteTableFD435EAC"
+                          "Ref": "PatientManagementVPCPublicSubnet2RouteTable391C4D34"
                         },
                         "subnetId": {
-                          "Ref": "ManagementSystemVPCPublicSubnet2SubnetC56BE57A"
+                          "Ref": "PatientManagementVPCPublicSubnet2Subnet07CEC558"
                         }
                       }
                     },
@@ -300,16 +300,16 @@
                   },
                   "DefaultRoute": {
                     "id": "DefaultRoute",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet2/DefaultRoute",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet2/DefaultRoute",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::Route",
                       "aws:cdk:cloudformation:props": {
                         "destinationCidrBlock": "0.0.0.0/0",
                         "gatewayId": {
-                          "Ref": "ManagementSystemVPCIGW555A793D"
+                          "Ref": "PatientManagementVPCIGWA0746919"
                         },
                         "routeTableId": {
-                          "Ref": "ManagementSystemVPCPublicSubnet2RouteTableFD435EAC"
+                          "Ref": "PatientManagementVPCPublicSubnet2RouteTable391C4D34"
                         }
                       }
                     },
@@ -320,7 +320,7 @@
                   },
                   "EIP": {
                     "id": "EIP",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet2/EIP",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet2/EIP",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::EIP",
                       "aws:cdk:cloudformation:props": {
@@ -328,7 +328,7 @@
                         "tags": [
                           {
                             "key": "Name",
-                            "value": "localstack/ManagementSystemVPC/PublicSubnet2"
+                            "value": "localstack/PatientManagementVPC/PublicSubnet2"
                           }
                         ]
                       }
@@ -340,23 +340,23 @@
                   },
                   "NATGateway": {
                     "id": "NATGateway",
-                    "path": "localstack/ManagementSystemVPC/PublicSubnet2/NATGateway",
+                    "path": "localstack/PatientManagementVPC/PublicSubnet2/NATGateway",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::NatGateway",
                       "aws:cdk:cloudformation:props": {
                         "allocationId": {
                           "Fn::GetAtt": [
-                            "ManagementSystemVPCPublicSubnet2EIP099AF93F",
+                            "PatientManagementVPCPublicSubnet2EIP208E0C4A",
                             "AllocationId"
                           ]
                         },
                         "subnetId": {
-                          "Ref": "ManagementSystemVPCPublicSubnet2SubnetC56BE57A"
+                          "Ref": "PatientManagementVPCPublicSubnet2Subnet07CEC558"
                         },
                         "tags": [
                           {
                             "key": "Name",
-                            "value": "localstack/ManagementSystemVPC/PublicSubnet2"
+                            "value": "localstack/PatientManagementVPC/PublicSubnet2"
                           }
                         ]
                       }
@@ -375,11 +375,11 @@
               },
               "PrivateSubnet1": {
                 "id": "PrivateSubnet1",
-                "path": "localstack/ManagementSystemVPC/PrivateSubnet1",
+                "path": "localstack/PatientManagementVPC/PrivateSubnet1",
                 "children": {
                   "Subnet": {
                     "id": "Subnet",
-                    "path": "localstack/ManagementSystemVPC/PrivateSubnet1/Subnet",
+                    "path": "localstack/PatientManagementVPC/PrivateSubnet1/Subnet",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::Subnet",
                       "aws:cdk:cloudformation:props": {
@@ -404,11 +404,11 @@
                           },
                           {
                             "key": "Name",
-                            "value": "localstack/ManagementSystemVPC/PrivateSubnet1"
+                            "value": "localstack/PatientManagementVPC/PrivateSubnet1"
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -419,7 +419,7 @@
                   },
                   "Acl": {
                     "id": "Acl",
-                    "path": "localstack/ManagementSystemVPC/PrivateSubnet1/Acl",
+                    "path": "localstack/PatientManagementVPC/PrivateSubnet1/Acl",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
                       "version": "2.178.1",
@@ -428,18 +428,18 @@
                   },
                   "RouteTable": {
                     "id": "RouteTable",
-                    "path": "localstack/ManagementSystemVPC/PrivateSubnet1/RouteTable",
+                    "path": "localstack/PatientManagementVPC/PrivateSubnet1/RouteTable",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::RouteTable",
                       "aws:cdk:cloudformation:props": {
                         "tags": [
                           {
                             "key": "Name",
-                            "value": "localstack/ManagementSystemVPC/PrivateSubnet1"
+                            "value": "localstack/PatientManagementVPC/PrivateSubnet1"
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -450,15 +450,15 @@
                   },
                   "RouteTableAssociation": {
                     "id": "RouteTableAssociation",
-                    "path": "localstack/ManagementSystemVPC/PrivateSubnet1/RouteTableAssociation",
+                    "path": "localstack/PatientManagementVPC/PrivateSubnet1/RouteTableAssociation",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::SubnetRouteTableAssociation",
                       "aws:cdk:cloudformation:props": {
                         "routeTableId": {
-                          "Ref": "ManagementSystemVPCPrivateSubnet1RouteTable036163CC"
+                          "Ref": "PatientManagementVPCPrivateSubnet1RouteTableE0FA4385"
                         },
                         "subnetId": {
-                          "Ref": "ManagementSystemVPCPrivateSubnet1SubnetF5F9816E"
+                          "Ref": "PatientManagementVPCPrivateSubnet1Subnet05B10E79"
                         }
                       }
                     },
@@ -469,16 +469,16 @@
                   },
                   "DefaultRoute": {
                     "id": "DefaultRoute",
-                    "path": "localstack/ManagementSystemVPC/PrivateSubnet1/DefaultRoute",
+                    "path": "localstack/PatientManagementVPC/PrivateSubnet1/DefaultRoute",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::Route",
                       "aws:cdk:cloudformation:props": {
                         "destinationCidrBlock": "0.0.0.0/0",
                         "natGatewayId": {
-                          "Ref": "ManagementSystemVPCPublicSubnet1NATGateway079D9923"
+                          "Ref": "PatientManagementVPCPublicSubnet1NATGatewayB9CF9F92"
                         },
                         "routeTableId": {
-                          "Ref": "ManagementSystemVPCPrivateSubnet1RouteTable036163CC"
+                          "Ref": "PatientManagementVPCPrivateSubnet1RouteTableE0FA4385"
                         }
                       }
                     },
@@ -496,11 +496,11 @@
               },
               "PrivateSubnet2": {
                 "id": "PrivateSubnet2",
-                "path": "localstack/ManagementSystemVPC/PrivateSubnet2",
+                "path": "localstack/PatientManagementVPC/PrivateSubnet2",
                 "children": {
                   "Subnet": {
                     "id": "Subnet",
-                    "path": "localstack/ManagementSystemVPC/PrivateSubnet2/Subnet",
+                    "path": "localstack/PatientManagementVPC/PrivateSubnet2/Subnet",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::Subnet",
                       "aws:cdk:cloudformation:props": {
@@ -525,11 +525,11 @@
                           },
                           {
                             "key": "Name",
-                            "value": "localstack/ManagementSystemVPC/PrivateSubnet2"
+                            "value": "localstack/PatientManagementVPC/PrivateSubnet2"
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -540,7 +540,7 @@
                   },
                   "Acl": {
                     "id": "Acl",
-                    "path": "localstack/ManagementSystemVPC/PrivateSubnet2/Acl",
+                    "path": "localstack/PatientManagementVPC/PrivateSubnet2/Acl",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
                       "version": "2.178.1",
@@ -549,18 +549,18 @@
                   },
                   "RouteTable": {
                     "id": "RouteTable",
-                    "path": "localstack/ManagementSystemVPC/PrivateSubnet2/RouteTable",
+                    "path": "localstack/PatientManagementVPC/PrivateSubnet2/RouteTable",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::RouteTable",
                       "aws:cdk:cloudformation:props": {
                         "tags": [
                           {
                             "key": "Name",
-                            "value": "localstack/ManagementSystemVPC/PrivateSubnet2"
+                            "value": "localstack/PatientManagementVPC/PrivateSubnet2"
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -571,15 +571,15 @@
                   },
                   "RouteTableAssociation": {
                     "id": "RouteTableAssociation",
-                    "path": "localstack/ManagementSystemVPC/PrivateSubnet2/RouteTableAssociation",
+                    "path": "localstack/PatientManagementVPC/PrivateSubnet2/RouteTableAssociation",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::SubnetRouteTableAssociation",
                       "aws:cdk:cloudformation:props": {
                         "routeTableId": {
-                          "Ref": "ManagementSystemVPCPrivateSubnet2RouteTable8B638F87"
+                          "Ref": "PatientManagementVPCPrivateSubnet2RouteTableBC0C3BB6"
                         },
                         "subnetId": {
-                          "Ref": "ManagementSystemVPCPrivateSubnet2SubnetA66A9F9B"
+                          "Ref": "PatientManagementVPCPrivateSubnet2Subnet8A2E409C"
                         }
                       }
                     },
@@ -590,16 +590,16 @@
                   },
                   "DefaultRoute": {
                     "id": "DefaultRoute",
-                    "path": "localstack/ManagementSystemVPC/PrivateSubnet2/DefaultRoute",
+                    "path": "localstack/PatientManagementVPC/PrivateSubnet2/DefaultRoute",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::Route",
                       "aws:cdk:cloudformation:props": {
                         "destinationCidrBlock": "0.0.0.0/0",
                         "natGatewayId": {
-                          "Ref": "ManagementSystemVPCPublicSubnet2NATGateway1BE252D3"
+                          "Ref": "PatientManagementVPCPublicSubnet2NATGateway28B0784D"
                         },
                         "routeTableId": {
-                          "Ref": "ManagementSystemVPCPrivateSubnet2RouteTable8B638F87"
+                          "Ref": "PatientManagementVPCPrivateSubnet2RouteTableBC0C3BB6"
                         }
                       }
                     },
@@ -617,14 +617,14 @@
               },
               "IGW": {
                 "id": "IGW",
-                "path": "localstack/ManagementSystemVPC/IGW",
+                "path": "localstack/PatientManagementVPC/IGW",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::EC2::InternetGateway",
                   "aws:cdk:cloudformation:props": {
                     "tags": [
                       {
                         "key": "Name",
-                        "value": "ManagementSystemVPC"
+                        "value": "PatientManagementVPC"
                       }
                     ]
                   }
@@ -636,15 +636,15 @@
               },
               "VPCGW": {
                 "id": "VPCGW",
-                "path": "localstack/ManagementSystemVPC/VPCGW",
+                "path": "localstack/PatientManagementVPC/VPCGW",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::EC2::VPCGatewayAttachment",
                   "aws:cdk:cloudformation:props": {
                     "internetGatewayId": {
-                      "Ref": "ManagementSystemVPCIGW555A793D"
+                      "Ref": "PatientManagementVPCIGWA0746919"
                     },
                     "vpcId": {
-                      "Ref": "ManagementSystemVPCE2F7C494"
+                      "Ref": "PatientManagementVPC522067E7"
                     }
                   }
                 },
@@ -656,57 +656,6 @@
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.aws_ec2.Vpc",
-              "version": "2.178.1",
-              "metadata": []
-            }
-          },
-          "ManagementSystemCluster": {
-            "id": "ManagementSystemCluster",
-            "path": "localstack/ManagementSystemCluster",
-            "children": {
-              "Resource": {
-                "id": "Resource",
-                "path": "localstack/ManagementSystemCluster/Resource",
-                "attributes": {
-                  "aws:cdk:cloudformation:type": "AWS::ECS::Cluster",
-                  "aws:cdk:cloudformation:props": {}
-                },
-                "constructInfo": {
-                  "fqn": "aws-cdk-lib.aws_ecs.CfnCluster",
-                  "version": "2.178.1"
-                }
-              },
-              "DefaultServiceDiscoveryNamespace": {
-                "id": "DefaultServiceDiscoveryNamespace",
-                "path": "localstack/ManagementSystemCluster/DefaultServiceDiscoveryNamespace",
-                "children": {
-                  "Resource": {
-                    "id": "Resource",
-                    "path": "localstack/ManagementSystemCluster/DefaultServiceDiscoveryNamespace/Resource",
-                    "attributes": {
-                      "aws:cdk:cloudformation:type": "AWS::ServiceDiscovery::PrivateDnsNamespace",
-                      "aws:cdk:cloudformation:props": {
-                        "name": "management-system.local",
-                        "vpc": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
-                        }
-                      }
-                    },
-                    "constructInfo": {
-                      "fqn": "aws-cdk-lib.aws_servicediscovery.CfnPrivateDnsNamespace",
-                      "version": "2.178.1"
-                    }
-                  }
-                },
-                "constructInfo": {
-                  "fqn": "aws-cdk-lib.aws_servicediscovery.PrivateDnsNamespace",
-                  "version": "2.178.1",
-                  "metadata": []
-                }
-              }
-            },
-            "constructInfo": {
-              "fqn": "aws-cdk-lib.aws_ecs.Cluster",
               "version": "2.178.1",
               "metadata": []
             }
@@ -728,10 +677,10 @@
                         "dbSubnetGroupDescription": "Subnet group for AuthServiceDB database",
                         "subnetIds": [
                           {
-                            "Ref": "ManagementSystemVPCPrivateSubnet1SubnetF5F9816E"
+                            "Ref": "PatientManagementVPCPrivateSubnet1Subnet05B10E79"
                           },
                           {
-                            "Ref": "ManagementSystemVPCPrivateSubnet2SubnetA66A9F9B"
+                            "Ref": "PatientManagementVPCPrivateSubnet2Subnet8A2E409C"
                           }
                         ]
                       }
@@ -767,7 +716,7 @@
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -923,10 +872,10 @@
                         "dbSubnetGroupDescription": "Subnet group for PatientServiceDB database",
                         "subnetIds": [
                           {
-                            "Ref": "ManagementSystemVPCPrivateSubnet1SubnetF5F9816E"
+                            "Ref": "PatientManagementVPCPrivateSubnet1Subnet05B10E79"
                           },
                           {
-                            "Ref": "ManagementSystemVPCPrivateSubnet2SubnetA66A9F9B"
+                            "Ref": "PatientManagementVPCPrivateSubnet2Subnet8A2E409C"
                           }
                         ]
                       }
@@ -962,7 +911,7 @@
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -1170,23 +1119,74 @@
                 "brokerNodeGroupInfo": {
                   "clientSubnets": [
                     {
-                      "Ref": "ManagementSystemVPCPrivateSubnet1SubnetF5F9816E"
+                      "Ref": "PatientManagementVPCPrivateSubnet1Subnet05B10E79"
                     },
                     {
-                      "Ref": "ManagementSystemVPCPrivateSubnet2SubnetA66A9F9B"
+                      "Ref": "PatientManagementVPCPrivateSubnet2Subnet8A2E409C"
                     }
                   ],
                   "instanceType": "kafka.m5.xlarge",
                   "brokerAzDistribution": "DEFAULT"
                 },
                 "clusterName": "kafka-cluster",
-                "kafkaVersion": "2.8.0",
-                "numberOfBrokerNodes": 1
+                "kafkaVersion": "3.7.x",
+                "numberOfBrokerNodes": 2
               }
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.aws_msk.CfnCluster",
               "version": "2.178.1"
+            }
+          },
+          "PatientManagementCluster": {
+            "id": "PatientManagementCluster",
+            "path": "localstack/PatientManagementCluster",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "localstack/PatientManagementCluster/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::ECS::Cluster",
+                  "aws:cdk:cloudformation:props": {}
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_ecs.CfnCluster",
+                  "version": "2.178.1"
+                }
+              },
+              "DefaultServiceDiscoveryNamespace": {
+                "id": "DefaultServiceDiscoveryNamespace",
+                "path": "localstack/PatientManagementCluster/DefaultServiceDiscoveryNamespace",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "localstack/PatientManagementCluster/DefaultServiceDiscoveryNamespace/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::ServiceDiscovery::PrivateDnsNamespace",
+                      "aws:cdk:cloudformation:props": {
+                        "name": "patient-management.local",
+                        "vpc": {
+                          "Ref": "PatientManagementVPC522067E7"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_servicediscovery.CfnPrivateDnsNamespace",
+                      "version": "2.178.1"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_servicediscovery.PrivateDnsNamespace",
+                  "version": "2.178.1",
+                  "metadata": []
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_ecs.Cluster",
+              "version": "2.178.1",
+              "metadata": []
             }
           },
           "AuthServiceTask": {
@@ -1275,7 +1275,7 @@
                           },
                           {
                             "name": "JWT_SECRET",
-                            "value": "bXlzZWNyZXRrZXl0aGF0aXNsb25nZW5vdWdoZm9yand0dG9rZW5zMTIzNDU2Nzg5MA=="
+                            "value": "Y2hhVEc3aHJnb0hYTzMyZ2ZqVkpiZ1RkZG93YWxrUkM="
                           },
                           {
                             "name": "SPRING_DATASOURCE_URL",
@@ -1507,7 +1507,7 @@
                   "aws:cdk:cloudformation:type": "AWS::ECS::Service",
                   "aws:cdk:cloudformation:props": {
                     "cluster": {
-                      "Ref": "ManagementSystemCluster148FAD92"
+                      "Ref": "PatientManagementCluster98E10F8D"
                     },
                     "deploymentConfiguration": {
                       "maximumPercent": 200,
@@ -1525,10 +1525,10 @@
                         "assignPublicIp": "DISABLED",
                         "subnets": [
                           {
-                            "Ref": "ManagementSystemVPCPrivateSubnet1SubnetF5F9816E"
+                            "Ref": "PatientManagementVPCPrivateSubnet1Subnet05B10E79"
                           },
                           {
-                            "Ref": "ManagementSystemVPCPrivateSubnet2SubnetA66A9F9B"
+                            "Ref": "PatientManagementVPCPrivateSubnet2Subnet8A2E409C"
                           }
                         ],
                         "securityGroups": [
@@ -1571,7 +1571,7 @@
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -1857,7 +1857,7 @@
                   "aws:cdk:cloudformation:type": "AWS::ECS::Service",
                   "aws:cdk:cloudformation:props": {
                     "cluster": {
-                      "Ref": "ManagementSystemCluster148FAD92"
+                      "Ref": "PatientManagementCluster98E10F8D"
                     },
                     "deploymentConfiguration": {
                       "maximumPercent": 200,
@@ -1875,10 +1875,10 @@
                         "assignPublicIp": "DISABLED",
                         "subnets": [
                           {
-                            "Ref": "ManagementSystemVPCPrivateSubnet1SubnetF5F9816E"
+                            "Ref": "PatientManagementVPCPrivateSubnet1Subnet05B10E79"
                           },
                           {
-                            "Ref": "ManagementSystemVPCPrivateSubnet2SubnetA66A9F9B"
+                            "Ref": "PatientManagementVPCPrivateSubnet2Subnet8A2E409C"
                           }
                         ],
                         "securityGroups": [
@@ -1921,7 +1921,7 @@
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -2202,7 +2202,7 @@
                   "aws:cdk:cloudformation:type": "AWS::ECS::Service",
                   "aws:cdk:cloudformation:props": {
                     "cluster": {
-                      "Ref": "ManagementSystemCluster148FAD92"
+                      "Ref": "PatientManagementCluster98E10F8D"
                     },
                     "deploymentConfiguration": {
                       "maximumPercent": 200,
@@ -2220,10 +2220,10 @@
                         "assignPublicIp": "DISABLED",
                         "subnets": [
                           {
-                            "Ref": "ManagementSystemVPCPrivateSubnet1SubnetF5F9816E"
+                            "Ref": "PatientManagementVPCPrivateSubnet1Subnet05B10E79"
                           },
                           {
-                            "Ref": "ManagementSystemVPCPrivateSubnet2SubnetA66A9F9B"
+                            "Ref": "PatientManagementVPCPrivateSubnet2Subnet8A2E409C"
                           }
                         ],
                         "securityGroups": [
@@ -2266,7 +2266,7 @@
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -2611,7 +2611,7 @@
                   "aws:cdk:cloudformation:type": "AWS::ECS::Service",
                   "aws:cdk:cloudformation:props": {
                     "cluster": {
-                      "Ref": "ManagementSystemCluster148FAD92"
+                      "Ref": "PatientManagementCluster98E10F8D"
                     },
                     "deploymentConfiguration": {
                       "maximumPercent": 200,
@@ -2629,10 +2629,10 @@
                         "assignPublicIp": "DISABLED",
                         "subnets": [
                           {
-                            "Ref": "ManagementSystemVPCPrivateSubnet1SubnetF5F9816E"
+                            "Ref": "PatientManagementVPCPrivateSubnet1Subnet05B10E79"
                           },
                           {
-                            "Ref": "ManagementSystemVPCPrivateSubnet2SubnetA66A9F9B"
+                            "Ref": "PatientManagementVPCPrivateSubnet2Subnet8A2E409C"
                           }
                         ],
                         "securityGroups": [
@@ -2675,7 +2675,7 @@
                           }
                         ],
                         "vpcId": {
-                          "Ref": "ManagementSystemVPCE2F7C494"
+                          "Ref": "PatientManagementVPC522067E7"
                         }
                       }
                     },
@@ -2779,12 +2779,12 @@
                         },
                         "environment": [
                           {
-                            "name": "SPRING_PROFILES_ACTIVE",
-                            "value": "prod"
-                          },
-                          {
                             "name": "AUTH_SERVICE_URL",
                             "value": "http://host.docker.internal:4005"
+                          },
+                          {
+                            "name": "SPRING_PROFILES_ACTIVE",
+                            "value": "prod"
                           }
                         ]
                       }
@@ -2980,10 +2980,10 @@
                         ],
                         "subnets": [
                           {
-                            "Ref": "ManagementSystemVPCPublicSubnet1Subnet077400EE"
+                            "Ref": "PatientManagementVPCPublicSubnet1SubnetC8305E9D"
                           },
                           {
-                            "Ref": "ManagementSystemVPCPublicSubnet2SubnetC56BE57A"
+                            "Ref": "PatientManagementVPCPublicSubnet2Subnet07CEC558"
                           }
                         ],
                         "type": "application"
@@ -3015,7 +3015,7 @@
                               }
                             ],
                             "vpcId": {
-                              "Ref": "ManagementSystemVPCE2F7C494"
+                              "Ref": "PatientManagementVPC522067E7"
                             }
                           }
                         },
@@ -3110,7 +3110,7 @@
                                 ],
                                 "targetType": "ip",
                                 "vpcId": {
-                                  "Ref": "ManagementSystemVPCE2F7C494"
+                                  "Ref": "PatientManagementVPC522067E7"
                                 }
                               }
                             },
@@ -3166,7 +3166,7 @@
                       "aws:cdk:cloudformation:type": "AWS::ECS::Service",
                       "aws:cdk:cloudformation:props": {
                         "cluster": {
-                          "Ref": "ManagementSystemCluster148FAD92"
+                          "Ref": "PatientManagementCluster98E10F8D"
                         },
                         "deploymentConfiguration": {
                           "maximumPercent": 200,
@@ -3195,10 +3195,10 @@
                             "assignPublicIp": "DISABLED",
                             "subnets": [
                               {
-                                "Ref": "ManagementSystemVPCPrivateSubnet1SubnetF5F9816E"
+                                "Ref": "PatientManagementVPCPrivateSubnet1Subnet05B10E79"
                               },
                               {
-                                "Ref": "ManagementSystemVPCPrivateSubnet2SubnetA66A9F9B"
+                                "Ref": "PatientManagementVPCPrivateSubnet2Subnet8A2E409C"
                               }
                             ],
                             "securityGroups": [
@@ -3241,7 +3241,7 @@
                               }
                             ],
                             "vpcId": {
-                              "Ref": "ManagementSystemVPCE2F7C494"
+                              "Ref": "PatientManagementVPC522067E7"
                             }
                           }
                         },

@@ -12,154 +12,142 @@
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}"
       },
       "metadata": {
-        "/localstack/ManagementSystemVPC/Resource": [
+        "/localstack/PatientManagementVPC/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCE2F7C494"
+            "data": "PatientManagementVPC522067E7"
           }
         ],
-        "/localstack/ManagementSystemVPC/PublicSubnet1/Subnet": [
+        "/localstack/PatientManagementVPC/PublicSubnet1/Subnet": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPublicSubnet1Subnet077400EE"
+            "data": "PatientManagementVPCPublicSubnet1SubnetC8305E9D"
           }
         ],
-        "/localstack/ManagementSystemVPC/PublicSubnet1/RouteTable": [
+        "/localstack/PatientManagementVPC/PublicSubnet1/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPublicSubnet1RouteTableAA09E8F1"
+            "data": "PatientManagementVPCPublicSubnet1RouteTableA48D3D3E"
           }
         ],
-        "/localstack/ManagementSystemVPC/PublicSubnet1/RouteTableAssociation": [
+        "/localstack/PatientManagementVPC/PublicSubnet1/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPublicSubnet1RouteTableAssociation6894F792"
+            "data": "PatientManagementVPCPublicSubnet1RouteTableAssociationA39A24A4"
           }
         ],
-        "/localstack/ManagementSystemVPC/PublicSubnet1/DefaultRoute": [
+        "/localstack/PatientManagementVPC/PublicSubnet1/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPublicSubnet1DefaultRouteD235F518"
+            "data": "PatientManagementVPCPublicSubnet1DefaultRoute1E407ABB"
           }
         ],
-        "/localstack/ManagementSystemVPC/PublicSubnet1/EIP": [
+        "/localstack/PatientManagementVPC/PublicSubnet1/EIP": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPublicSubnet1EIPE5552E62"
+            "data": "PatientManagementVPCPublicSubnet1EIPC113BD7F"
           }
         ],
-        "/localstack/ManagementSystemVPC/PublicSubnet1/NATGateway": [
+        "/localstack/PatientManagementVPC/PublicSubnet1/NATGateway": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPublicSubnet1NATGateway079D9923"
+            "data": "PatientManagementVPCPublicSubnet1NATGatewayB9CF9F92"
           }
         ],
-        "/localstack/ManagementSystemVPC/PublicSubnet2/Subnet": [
+        "/localstack/PatientManagementVPC/PublicSubnet2/Subnet": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPublicSubnet2SubnetC56BE57A"
+            "data": "PatientManagementVPCPublicSubnet2Subnet07CEC558"
           }
         ],
-        "/localstack/ManagementSystemVPC/PublicSubnet2/RouteTable": [
+        "/localstack/PatientManagementVPC/PublicSubnet2/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPublicSubnet2RouteTableFD435EAC"
+            "data": "PatientManagementVPCPublicSubnet2RouteTable391C4D34"
           }
         ],
-        "/localstack/ManagementSystemVPC/PublicSubnet2/RouteTableAssociation": [
+        "/localstack/PatientManagementVPC/PublicSubnet2/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPublicSubnet2RouteTableAssociation4771F9D0"
+            "data": "PatientManagementVPCPublicSubnet2RouteTableAssociationCAC8BA09"
           }
         ],
-        "/localstack/ManagementSystemVPC/PublicSubnet2/DefaultRoute": [
+        "/localstack/PatientManagementVPC/PublicSubnet2/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPublicSubnet2DefaultRouteF98629BF"
+            "data": "PatientManagementVPCPublicSubnet2DefaultRoute2DC1F916"
           }
         ],
-        "/localstack/ManagementSystemVPC/PublicSubnet2/EIP": [
+        "/localstack/PatientManagementVPC/PublicSubnet2/EIP": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPublicSubnet2EIP099AF93F"
+            "data": "PatientManagementVPCPublicSubnet2EIP208E0C4A"
           }
         ],
-        "/localstack/ManagementSystemVPC/PublicSubnet2/NATGateway": [
+        "/localstack/PatientManagementVPC/PublicSubnet2/NATGateway": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPublicSubnet2NATGateway1BE252D3"
+            "data": "PatientManagementVPCPublicSubnet2NATGateway28B0784D"
           }
         ],
-        "/localstack/ManagementSystemVPC/PrivateSubnet1/Subnet": [
+        "/localstack/PatientManagementVPC/PrivateSubnet1/Subnet": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPrivateSubnet1SubnetF5F9816E"
+            "data": "PatientManagementVPCPrivateSubnet1Subnet05B10E79"
           }
         ],
-        "/localstack/ManagementSystemVPC/PrivateSubnet1/RouteTable": [
+        "/localstack/PatientManagementVPC/PrivateSubnet1/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPrivateSubnet1RouteTable036163CC"
+            "data": "PatientManagementVPCPrivateSubnet1RouteTableE0FA4385"
           }
         ],
-        "/localstack/ManagementSystemVPC/PrivateSubnet1/RouteTableAssociation": [
+        "/localstack/PatientManagementVPC/PrivateSubnet1/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPrivateSubnet1RouteTableAssociationC7FEF709"
+            "data": "PatientManagementVPCPrivateSubnet1RouteTableAssociationAA604973"
           }
         ],
-        "/localstack/ManagementSystemVPC/PrivateSubnet1/DefaultRoute": [
+        "/localstack/PatientManagementVPC/PrivateSubnet1/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPrivateSubnet1DefaultRouteCC7BA082"
+            "data": "PatientManagementVPCPrivateSubnet1DefaultRouteC24DADA9"
           }
         ],
-        "/localstack/ManagementSystemVPC/PrivateSubnet2/Subnet": [
+        "/localstack/PatientManagementVPC/PrivateSubnet2/Subnet": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPrivateSubnet2SubnetA66A9F9B"
+            "data": "PatientManagementVPCPrivateSubnet2Subnet8A2E409C"
           }
         ],
-        "/localstack/ManagementSystemVPC/PrivateSubnet2/RouteTable": [
+        "/localstack/PatientManagementVPC/PrivateSubnet2/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPrivateSubnet2RouteTable8B638F87"
+            "data": "PatientManagementVPCPrivateSubnet2RouteTableBC0C3BB6"
           }
         ],
-        "/localstack/ManagementSystemVPC/PrivateSubnet2/RouteTableAssociation": [
+        "/localstack/PatientManagementVPC/PrivateSubnet2/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPrivateSubnet2RouteTableAssociationCEC7CA08"
+            "data": "PatientManagementVPCPrivateSubnet2RouteTableAssociationC55EBEF2"
           }
         ],
-        "/localstack/ManagementSystemVPC/PrivateSubnet2/DefaultRoute": [
+        "/localstack/PatientManagementVPC/PrivateSubnet2/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCPrivateSubnet2DefaultRoute194C1BDD"
+            "data": "PatientManagementVPCPrivateSubnet2DefaultRoute98121A2D"
           }
         ],
-        "/localstack/ManagementSystemVPC/IGW": [
+        "/localstack/PatientManagementVPC/IGW": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCIGW555A793D"
+            "data": "PatientManagementVPCIGWA0746919"
           }
         ],
-        "/localstack/ManagementSystemVPC/VPCGW": [
+        "/localstack/PatientManagementVPC/VPCGW": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemVPCVPCGW81E8B916"
-          }
-        ],
-        "/localstack/ManagementSystemCluster/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemCluster148FAD92"
-          }
-        ],
-        "/localstack/ManagementSystemCluster/DefaultServiceDiscoveryNamespace/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "ManagementSystemClusterDefaultServiceDiscoveryNamespace014CCB88"
+            "data": "PatientManagementVPCVPCGW1FFEFAEB"
           }
         ],
         "/localstack/AuthServiceDB/SubnetGroup/Default": [
@@ -240,6 +228,18 @@
             "data": "MskCluster"
           }
         ],
+        "/localstack/PatientManagementCluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementCluster98E10F8D"
+          }
+        ],
+        "/localstack/PatientManagementCluster/DefaultServiceDiscoveryNamespace/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementClusterDefaultServiceDiscoveryNamespace72C5F264"
+          }
+        ],
         "/localstack/AuthServiceTask/TaskRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
@@ -275,15 +275,15 @@
             "type": "aws:cdk:warning",
             "data": "minHealthyPercent has not been configured so the default value of 50% is used. The number of running tasks will decrease below the desired count during deployments etc. See https://github.com/aws/aws-cdk/issues/31705 [ack: @aws-cdk/aws-ecs:minHealthyPercent]",
             "trace": [
-              "Annotations.addMessage (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1608)",
-              "Annotations.addWarningV2 (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:825)",
-              "new BaseService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\base\\base-service.js:1:8100)",
-              "new FargateService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\fargate\\fargate-service.js:1:3551)",
-              "Kernel._Kernel_create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:549:25)",
-              "Kernel.create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:219:93)",
-              "KernelHost.processRequest (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15482:36)",
-              "KernelHost.run (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15442:22)",
-              "Immediate._onImmediate (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15443:45)",
+              "Annotations.addMessage (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1608)",
+              "Annotations.addWarningV2 (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:825)",
+              "new BaseService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\base\\base-service.js:1:8100)",
+              "new FargateService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\fargate\\fargate-service.js:1:3551)",
+              "Kernel._Kernel_create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:549:25)",
+              "Kernel.create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:219:93)",
+              "KernelHost.processRequest (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15482:36)",
+              "KernelHost.run (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15442:22)",
+              "Immediate._onImmediate (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15443:45)",
               "process.processImmediate (node:internal/timers:483:21)"
             ]
           }
@@ -335,15 +335,15 @@
             "type": "aws:cdk:warning",
             "data": "minHealthyPercent has not been configured so the default value of 50% is used. The number of running tasks will decrease below the desired count during deployments etc. See https://github.com/aws/aws-cdk/issues/31705 [ack: @aws-cdk/aws-ecs:minHealthyPercent]",
             "trace": [
-              "Annotations.addMessage (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1608)",
-              "Annotations.addWarningV2 (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:825)",
-              "new BaseService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\base\\base-service.js:1:8100)",
-              "new FargateService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\fargate\\fargate-service.js:1:3551)",
-              "Kernel._Kernel_create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:549:25)",
-              "Kernel.create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:219:93)",
-              "KernelHost.processRequest (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15482:36)",
-              "KernelHost.run (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15442:22)",
-              "Immediate._onImmediate (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15443:45)",
+              "Annotations.addMessage (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1608)",
+              "Annotations.addWarningV2 (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:825)",
+              "new BaseService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\base\\base-service.js:1:8100)",
+              "new FargateService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\fargate\\fargate-service.js:1:3551)",
+              "Kernel._Kernel_create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:549:25)",
+              "Kernel.create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:219:93)",
+              "KernelHost.processRequest (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15482:36)",
+              "KernelHost.run (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15442:22)",
+              "Immediate._onImmediate (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15443:45)",
               "process.processImmediate (node:internal/timers:483:21)"
             ]
           }
@@ -395,15 +395,15 @@
             "type": "aws:cdk:warning",
             "data": "minHealthyPercent has not been configured so the default value of 50% is used. The number of running tasks will decrease below the desired count during deployments etc. See https://github.com/aws/aws-cdk/issues/31705 [ack: @aws-cdk/aws-ecs:minHealthyPercent]",
             "trace": [
-              "Annotations.addMessage (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1608)",
-              "Annotations.addWarningV2 (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:825)",
-              "new BaseService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\base\\base-service.js:1:8100)",
-              "new FargateService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\fargate\\fargate-service.js:1:3551)",
-              "Kernel._Kernel_create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:549:25)",
-              "Kernel.create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:219:93)",
-              "KernelHost.processRequest (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15482:36)",
-              "KernelHost.run (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15442:22)",
-              "Immediate._onImmediate (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15443:45)",
+              "Annotations.addMessage (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1608)",
+              "Annotations.addWarningV2 (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:825)",
+              "new BaseService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\base\\base-service.js:1:8100)",
+              "new FargateService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\fargate\\fargate-service.js:1:3551)",
+              "Kernel._Kernel_create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:549:25)",
+              "Kernel.create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:219:93)",
+              "KernelHost.processRequest (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15482:36)",
+              "KernelHost.run (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15442:22)",
+              "Immediate._onImmediate (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15443:45)",
               "process.processImmediate (node:internal/timers:483:21)"
             ]
           }
@@ -455,15 +455,15 @@
             "type": "aws:cdk:warning",
             "data": "minHealthyPercent has not been configured so the default value of 50% is used. The number of running tasks will decrease below the desired count during deployments etc. See https://github.com/aws/aws-cdk/issues/31705 [ack: @aws-cdk/aws-ecs:minHealthyPercent]",
             "trace": [
-              "Annotations.addMessage (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1608)",
-              "Annotations.addWarningV2 (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:825)",
-              "new BaseService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\base\\base-service.js:1:8100)",
-              "new FargateService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\fargate\\fargate-service.js:1:3551)",
-              "Kernel._Kernel_create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:549:25)",
-              "Kernel.create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:219:93)",
-              "KernelHost.processRequest (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15482:36)",
-              "KernelHost.run (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15442:22)",
-              "Immediate._onImmediate (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15443:45)",
+              "Annotations.addMessage (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1608)",
+              "Annotations.addWarningV2 (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:825)",
+              "new BaseService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\base\\base-service.js:1:8100)",
+              "new FargateService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\fargate\\fargate-service.js:1:3551)",
+              "Kernel._Kernel_create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:549:25)",
+              "Kernel.create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:219:93)",
+              "KernelHost.processRequest (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15482:36)",
+              "KernelHost.run (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15442:22)",
+              "Immediate._onImmediate (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15443:45)",
               "process.processImmediate (node:internal/timers:483:21)"
             ]
           }
@@ -557,16 +557,16 @@
             "type": "aws:cdk:warning",
             "data": "minHealthyPercent has not been configured so the default value of 50% is used. The number of running tasks will decrease below the desired count during deployments etc. See https://github.com/aws/aws-cdk/issues/31705 [ack: @aws-cdk/aws-ecs:minHealthyPercent]",
             "trace": [
-              "Annotations.addMessage (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1608)",
-              "Annotations.addWarningV2 (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:825)",
-              "new BaseService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\base\\base-service.js:1:8100)",
-              "new FargateService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\fargate\\fargate-service.js:1:3551)",
-              "new ApplicationLoadBalancedFargateService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-A6h1Qm\\node_modules\\aws-cdk-lib\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:1:3340)",
-              "Kernel._Kernel_create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:549:25)",
-              "Kernel.create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:219:93)",
-              "KernelHost.processRequest (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15482:36)",
-              "KernelHost.run (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15442:22)",
-              "Immediate._onImmediate (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime12859356368241901633\\lib\\program.js:15443:45)",
+              "Annotations.addMessage (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1608)",
+              "Annotations.addWarningV2 (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:825)",
+              "new BaseService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\base\\base-service.js:1:8100)",
+              "new FargateService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\aws-ecs\\lib\\fargate\\fargate-service.js:1:3551)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-kernel-nuUIwX\\node_modules\\aws-cdk-lib\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:1:3340)",
+              "Kernel._Kernel_create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:549:25)",
+              "Kernel.create (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:219:93)",
+              "KernelHost.processRequest (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15482:36)",
+              "KernelHost.run (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15442:22)",
+              "Immediate._onImmediate (C:\\Users\\lucas\\AppData\\Local\\Temp\\jsii-java-runtime11847823314708354983\\lib\\program.js:15443:45)",
               "process.processImmediate (node:internal/timers:483:21)"
             ]
           }
